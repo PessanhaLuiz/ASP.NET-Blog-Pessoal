@@ -3,5 +3,25 @@
     ViewBag.Title = "Index";
 }
 
+@*@ @section ScriptContent{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            console.log('Carregou.');
+        });
+    </script>
+}*@
+    
 <h2>Index</h2>
 
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn-primary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked="">
+        Active
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+    </label>
+</div>
