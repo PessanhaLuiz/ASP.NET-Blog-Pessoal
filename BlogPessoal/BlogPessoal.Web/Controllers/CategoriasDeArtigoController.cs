@@ -19,7 +19,7 @@ namespace BlogPessoal.Web.Controllers
             var categoria = _ctx.CategoriaDeArtigos
                  .OrderBy(t => t.Nome)
                  .ToList();
-            return View();
+            return View(categoria);
         }
 
         public ActionResult Create()
