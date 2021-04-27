@@ -13,12 +13,16 @@ namespace BlogPessoal.Web.Models
 
         public string Conteudo { get; set; }
 
-        public DateTime data_publicacao { get; set; }
+        public DateTime DataPublicacao { get; set; }
 
-        public int categoria_artigo_id { get; set; }
+        public int CategoriaDeArtigoId { get; set; }
 
-        public int autor_id { get; set; }
+        public int AutorId { get; set; }
 
         public bool Removido { get; set; }
+
+        public virtual CategoriaDeArtigo CategoriaDeArtigo { get; set; }
+
+        public virtual Autor Autor { get; set; }
     }
 }

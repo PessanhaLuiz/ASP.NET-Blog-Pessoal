@@ -13,11 +13,13 @@ namespace BlogPessoal.Web.Data.Mapeamento
         {
             ToTable("autor", "dbo");
 
-            HasKey(t => t.Id);
+            HasKey(x => x.Id);
 
-            Property(x => x.Nome).IsRequired().HasMaxLength(150).HasColumnName("Nome");
-            Property(x => x.Email).IsRequired().HasMaxLength(150).HasColumnName("Email");
-            Property(x => x.Senha).IsRequired().HasMaxLength(50).HasColumnName("Senha");
+            Property(x => x.Nome).IsRequired().HasMaxLength(150);
+            Property(x => x.Email).IsRequired().HasMaxLength(150);
+            Property(x => x.Senha).IsRequired().HasMaxLength(50);
+            Property(x => x.Administrador).IsRequired();
+            Property(x => x.DataDeCadastro).IsRequired().HasColumnName("data_cadastro");
             
         }
 

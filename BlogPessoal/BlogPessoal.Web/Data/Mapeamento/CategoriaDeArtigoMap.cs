@@ -17,6 +17,8 @@ namespace BlogPessoal.Web.Data.Mapeamento
 
             Property(x => x.Nome).IsRequired().HasMaxLength(150).HasColumnName("Nome");
             Property(x => x.Descricao).IsOptional().HasMaxLength(300).HasColumnName("Descricao");
+
+
         }
 
 

@@ -112,9 +112,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ArtigosController.cs" />
     <Compile Include="Controllers\CategoriasDeArtigoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Data\Contexto\BlogPessoalContexto.cs" />
+    <Compile Include="Data\Mapeamento\Artigo.cs" />
+    <Compile Include="Data\Mapeamento\ArtigoMap.cs" />
     <Compile Include="Data\Mapeamento\AutorMap.cs" />
     <Compile Include="Data\Mapeamento\CategoriaDeArtigoMap.cs" />
     <Compile Include="Global.asax.cs">
@@ -140,6 +143,8 @@
     <Content Include="Views\CategoriasDeArtigo\Create.cshtml" />
     <Content Include="Views\CategoriasDeArtigo\Edit.cshtml" />
     <Content Include="Views\CategoriasDeArtigo\Delete.cshtml" />
+    <Content Include="Views\Artigos\Index.cshtml" />
+    <Content Include="Views\Artigos\Create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
